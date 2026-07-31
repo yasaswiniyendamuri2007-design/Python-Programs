@@ -1,0 +1,28 @@
+a=int(input("Enter the value of a:"))
+b=int(input("Enter the value of b:"))
+operator=input("Enter the operator:")
+def add(a,b):
+    c=a+b
+    print("addition",c)
+def sub(a,b):
+    c=a-b
+    print("Subtraction:",c)
+def mul(a,b):
+    c=a*b
+    print("Multiplication:",c)
+def div(a,b):
+    if(b==0):
+        print("ZeroDivisionError)
+    else:
+        c=a/b
+        print("Division:",c)
+if(operator=="+"):
+    add(a,b)
+elif(operator=="-"):
+    sub(a,b)
+elif(operator=="*"):
+    mul(a,b)
+elif(operator=="/"):
+    div(a,b)
+else:
+    print("Invalid operator")
