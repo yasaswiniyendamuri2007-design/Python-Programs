@@ -1,0 +1,4 @@
+dates=[13,25,19,31,1]
+dates.remove(1)
+print(dates)
+

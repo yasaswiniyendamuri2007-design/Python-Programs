@@ -1,0 +1,6 @@
+list=[10,20,100,2,34,56]
+smallest=list[0]
+for i in list:
+    if(i<=smallest):
+        smallest=i
+print("Smallest Number:",smallest)

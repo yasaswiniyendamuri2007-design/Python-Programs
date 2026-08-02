@@ -1,0 +1,9 @@
+num=int(input("Enter a number:"))
+def Evenodd(num):
+    if(num%2==0):
+        return "Even"
+    else:
+        return "Odd"
+result=Evenodd(num)
+print(num,"is",result)
+              

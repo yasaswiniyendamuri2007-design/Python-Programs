@@ -1,0 +1,7 @@
+dates=[13,25,19,31,1]
+print(dates[0])
+print(dates[1])
+print(dates[2])
+print(dates[3])
+print(dates[4])
+

@@ -1,0 +1,9 @@
+a=int(input("Enter the value of a:"))
+b=int(input("Enter the value of b:"))
+def Largest(a,b):
+    if(a>=b):
+        return a
+    else:
+        return b
+result=Largest(a,b)
+print(result,"is largest")
