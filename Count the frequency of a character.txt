@@ -1,0 +1,4 @@
+name=input("Enter the name:")
+a=input("Enter the character")
+b=name.count(a)
+print("Numbers of times the character appear in:",b)

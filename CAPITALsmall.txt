@@ -1,0 +1,5 @@
+sentence=input("Enter the  word:")
+word=sentence.upper()
+word1=sentence.lower()
+print("CAPITAL LETTERS:",word)
+print("SMALLER LETTERS:",word1)

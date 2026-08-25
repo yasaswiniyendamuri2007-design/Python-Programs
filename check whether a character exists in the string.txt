@@ -1,0 +1,6 @@
+name=input("Enter the name")
+a=input("Enter the character:")
+if a in name:
+    print("Character is present")
+else:
+    print("Character is not present")
