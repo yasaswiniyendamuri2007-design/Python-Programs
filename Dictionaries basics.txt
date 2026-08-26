@@ -1,0 +1,22 @@
+student={"name":"Yasaswini","age":19,"course":"CSE"}
+print("Acessing values")
+print(student["name"])
+print(student["age"])
+print(student["course"])
+print("Adding a new key value pair")
+student["college"]="Avanthi College"
+print(student)
+print("Updating value")
+student["age"]=20
+print(student)
+print("Printing keys")
+print(student.keys())
+print("Printing values")
+print(student.values())
+print("Printing both values and pairs")
+print(student.items())
+print("get function")
+print(student.get("name"))
+print("Removing a key")
+student.pop("name")
+print(student)

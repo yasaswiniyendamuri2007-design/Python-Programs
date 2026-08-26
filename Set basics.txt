@@ -1,0 +1,30 @@
+numbers={10,20,10,30,20}
+print("How the set behaves with the duplicate values")
+print(numbers)
+print("Add the element to the set")
+a=int(input("Enter a number:"))
+numbers.add(a)
+print(numbers)
+print("Remove an element")
+b=int(input("Enter a number:"))
+numbers.remove(b)
+print(numbers)
+print("Using discard")
+c=int(input("Enter a number:")
+numbers.discard(c)
+print(numbers)
+print("Unoin concept")
+set1={10,20,30,40,50}
+set2={60,70,80,90,100}
+result=set1.union(set2)
+print(result)
+print("Intersection concept")
+set1={10,20,30,40,50}
+set2={30,40,50,60,70}
+result=set1.intersection(set2)
+print(result)
+print("Difference concept")
+set1={10,20,30,40,50}
+set2={30,40,50,60,70}
+result=set1.difference(set2)
+print(result)
