@@ -1,0 +1,7 @@
+def count_vowel(word):
+    count=0
+    for i in word:
+        if i in "aeiou":
+            count=count+1
+    print(count)
+count_vowel("Yasaswini")
