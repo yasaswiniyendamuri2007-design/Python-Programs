@@ -1,0 +1,3 @@
+file=open("hello.txt","a")
+file.write("Iam intrested to learn python") 
+file.close()

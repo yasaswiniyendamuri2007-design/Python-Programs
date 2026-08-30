@@ -1,0 +1,8 @@
+file=open("hello.txt","r")
+data=file.read()
+count=0
+char=input("enter the character:")
+count=data.count(char)
+print(count)
+file.close()
+    

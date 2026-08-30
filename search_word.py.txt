@@ -1,0 +1,8 @@
+file=open("hello.txt","r")
+data=file.read()
+word=input("Enter the word to find")
+if word in data:
+    print("Word is present")
+else:
+    print("Word is not present")
+file.close()
