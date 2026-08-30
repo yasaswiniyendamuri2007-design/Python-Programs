@@ -1,0 +1,6 @@
+try:
+    num=int(input("Enter a number:"))
+except:
+    print("Number is Invalid")
+else:
+    print("Number is valid")

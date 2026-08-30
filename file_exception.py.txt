@@ -1,0 +1,7 @@
+try:
+    file=open("python.txt","r")
+    data=file.read()
+    print(data)
+    file.close()
+except FileNotFoundError:
+    print("file not found")

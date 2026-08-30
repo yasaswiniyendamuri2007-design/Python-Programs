@@ -1,0 +1,6 @@
+try:
+    student={"name":"Yasaswini","course":"CSE"}
+    key=input("Enter the key:")
+    print(student[key])
+except KeyError:
+    print("Key is not present in the dictionary")

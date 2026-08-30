@@ -1,0 +1,8 @@
+try:
+    numbers=[10,20,30,40,50]
+    index=int(input("Enter the index:"))
+    print(numbers[index])
+except IndexError:
+    print("Index does not exist")
+except ValueError:
+    print("Enter the valid number")
