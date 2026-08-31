@@ -1,0 +1,12 @@
+class Student:
+    def __init__(self,name,age,marks):
+        self.name=name
+        self.age=age
+        self.marks=marks
+    def display(self):
+        print("Student name is:",self.name)
+        print("The age of the student is",self.age)
+        print("Marks of the students are:",self.marks)
+student1=Student("Yasaswini",19,85)
+student1.display()
+

@@ -1,0 +1,5 @@
+class Student:
+    def display(self):
+        print("Hello,Iam a student")
+student1=Student()
+student1.display()

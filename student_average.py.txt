@@ -1,0 +1,11 @@
+class Student:
+    def __init__(self,maths,physics,python):
+        self.maths=maths
+        self.physics=physics
+        self.python=python
+    def average(self):
+        total=self.maths+self.physics+self.python
+        average=total/3
+        print("Average marks of the subjects are:",average)
+student1=Student(80,75,90)
+student1.average()

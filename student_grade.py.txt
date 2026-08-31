@@ -1,0 +1,15 @@
+class Student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def grade(self):
+        if(self.marks>=90):
+            print("You have passed with A Grade")
+        elif(self.marks>=80):
+            print("You have passed with B Grade")
+        elif(self.marks>=70):
+            print("You have passed with C Grade")
+        else:
+            print("Sorry !You have failed the exam")
+student1=Student("Yasaswini",85)
+student1.grade()
