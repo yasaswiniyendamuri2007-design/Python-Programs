@@ -1,0 +1,21 @@
+class Person:
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print("Name:",self.name)
+class Student(Person):
+    def __init__(self,name,course):
+        super().__init__(name)
+        self.course=course
+    def display(self):
+        super().display()
+        print("Course:",self.course)
+class CollegeStudent(Student):
+    def __init__(self,name,course,college):
+        super().__init__(name,course)
+        self.college=college
+    def display(self):
+        super().display()
+        print("College:",self.college)
+student1=CollegeStudent("Yasaswini","CSE","Avanthi")
+student1.display()

@@ -1,0 +1,13 @@
+class Person:
+    def display_person(self):
+        print("Iam a Person")
+class Student(Person):
+    def display_student(self):
+        print("Iam a student")
+class CollegeStudent(Student):
+    def display_collegestudent(self):
+        print("Iam a college student")
+student1=CollegeStudent()
+student1.display_person()
+student1.display_student()
+student1.display_collegestudent()

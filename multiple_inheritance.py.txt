@@ -1,0 +1,13 @@
+class Father:
+    def display(self):
+        print("Father is a teacher")
+class Mother:
+    def display(self):
+        print("Mother  is a doctor")
+class Child(Father,Mother):
+    def display(self):
+        print("Iam a student")
+        Father.display(self)
+        Mother.display(self)
+child1=Child()
+child1.display()
