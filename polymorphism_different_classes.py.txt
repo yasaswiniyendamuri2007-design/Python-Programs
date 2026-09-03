@@ -1,0 +1,15 @@
+class Student:
+    def work(self):
+        print("Student is studying")
+class Teacher:
+    def work(self):
+        print("Teacher is teaching")
+class Doctor:
+    def work(self):
+        print("Doctor is treating patients")
+student1=Student()
+teacher1=Teacher()
+doctor1=Doctor()
+student1.work()
+teacher1.work()
+doctor1.work()

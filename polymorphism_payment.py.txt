@@ -1,0 +1,15 @@
+class UPI:
+    def pay(self,amount):
+        print("Paid",amount, "using UPI")
+class CreditCard:
+    def pay(self,amount):
+        print("Paid",amount,"using CreditCard")
+class Cash:
+    def pay(self,amount):
+        print("Paid",amount,"using Cash")
+upi1=UPI()
+creditcard1=CreditCard()
+cash1=Cash()
+payments=[upi1,creditcard1,cash1]
+for payment in payments:
+    payment.pay(500)

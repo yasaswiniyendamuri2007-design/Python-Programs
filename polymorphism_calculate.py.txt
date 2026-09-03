@@ -1,0 +1,16 @@
+class Add:
+    def calculate(self,a,b):
+        return a+b
+class Subtraction:
+    def calculate(self,a,b):
+        return a-b
+class Multiply:
+    def calculate(self,a,b):
+        return a*b
+add1=Add()
+subtraction1=Subtraction()
+multiply1=Multiply()
+operations=[add1,subtraction1,multiply1]
+for operation in operations:
+    result=operation.calculate(10,5)
+    print(result)

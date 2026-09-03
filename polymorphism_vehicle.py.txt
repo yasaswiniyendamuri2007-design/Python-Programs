@@ -1,0 +1,17 @@
+class Car:
+    def move(self):
+        print("Car is moving")
+class Bike:
+    def move(self):
+        print("Bike is moving")
+class Bus:
+    def move(self):
+        print("Bus is moving")
+def start(vehicle):
+    vehicle.move()
+car1=Car()
+bike1=Bike()
+bus1=Bus()
+vehicles=[car1,bike1,bus1]
+for vehicle in vehicles:
+    start(vehicle)
