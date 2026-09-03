@@ -1,0 +1,20 @@
+from abc import ABC,abstractmethod
+class FoodOrder(ABC):
+    @abstractmethod
+    def order(self):
+        pass
+class Pizza(FoodOrder):
+    def order(self):
+        print("Pizza order placed")
+class Burger(FoodOrder):
+    def order(self):
+        print("Burger order placed")
+class Biryani(FoodOrder):
+    def order(self):
+        print("Biryani order placed")
+pizza1=Pizza()
+burger1=Burger()
+biryani1=Biryani()
+pizza1.order()
+burger1.order()
+biryani1.order()

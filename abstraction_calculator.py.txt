@@ -1,0 +1,23 @@
+from abc import ABC,abstractmethod
+class Calculator(ABC):
+    @abstractmethod
+    def calculate(self,a,b):
+        pass
+class Add(Calculator):
+    def calculate(self,a,b):
+        c=a+b
+        print(c)
+class Subtract(Calculator):
+    def calculate(self,a,b):
+        c=a-b
+        print(c)
+class Multiply(Calculator):
+    def calculate(self,a,b):
+        c=a*b
+        print(c)
+add1=Add()
+subtract1=Subtract()
+multiply1=Multiply()
+add1.calculate(10,5)
+subtract1.calculate(10,5)
+multiply1.calculate(10,5)

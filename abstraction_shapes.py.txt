@@ -1,0 +1,20 @@
+from abc import ABC,abstractmethod
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+class Circle(Shape):
+    def area(self):
+        print("Area of the circle")
+class Rectangle(Shape):
+    def area(self):
+        print("Area of the rectangle")
+class Triangle(Shape):
+    def area(self):
+        print("Area of the triangle")
+circle1=Circle()
+rectangle1=Rectangle()
+triangle1=Triangle()
+circle1.area()
+rectangle1.area()
+triangle1.area()

@@ -1,0 +1,20 @@
+from abc import ABC,abstractmethod
+class Payment(ABC):
+    @abstractmethod
+    def pay(self,amount):
+        pass
+class UPI(Payment):
+    def pay(self,amount):
+        print("Paid",amount,"using UPI")
+class CreditCard(Payment):
+    def pay(self,amount):
+        print("Paid",amount,"using CreditCard")
+class Cash(Payment):
+    def pay(self,amount):
+        print("Paid",amount,"using Cash")
+upi1=UPI()
+creditcard1=CreditCard()
+cash1=Cash()
+upi1.pay(500)
+creditcard1.pay(500)
+cash1.pay(500)
