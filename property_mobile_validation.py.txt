@@ -1,0 +1,19 @@
+class User:
+    def __init__(self,mobile):
+        self.__mobile=mobile
+    @property
+    def mobile(self):
+        return self.__mobile
+    @mobile.setter
+    def mobile(self,mobile):
+        if len(mobile)==10 and mobile.isdigit():
+            self.__mobile=mobile
+            print("Mobile number updated successfully")
+        else:
+            print("Invalid mobile number")
+user1=User("9876543210")
+print("Mobile number:",user1.mobile)
+user1.mobile="9515263187"
+print("Mobile number after updation:",user1.mobile)
+user1.mobile="252008"
+print("Mobile number after updation:",user1.mobile)

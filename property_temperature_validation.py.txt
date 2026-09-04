@@ -1,0 +1,19 @@
+class Temperature:
+    def __init__(self,celesius):
+        self.__celesius=celesius
+    @property
+    def celesius(self):
+        return self.__celesius
+    @celesius.setter
+    def celesius(self,celesius):
+        if celesius>=-273.5:
+            self.__celesius=celesius
+            print("Celesius updated successfully")
+        else:
+            print("Invalid celesius")
+temperature1=Temperature(25)
+print("Temperature:",temperature1.celesius)
+temperature1.celesius=30
+print("Temperature after updation:",temperature1.celesius)
+temperature1.celesius=-300
+print("Temperature after updation:",temperature1.celesius)

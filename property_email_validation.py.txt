@@ -1,0 +1,19 @@
+class User:
+    def __init__(self,email):
+        self.__email=email
+    @property
+    def email(self):
+        return self.__email
+    @email.setter
+    def email(self,email):
+        if "@" in email:
+            self.__email=email
+            print("Email updated successfully")
+        else:
+            print("Invalid email")
+user1=User("yasaswini@gmail.com")
+print("Email:",user1.email)
+user1.email="student@gmail.com"
+print("Email after updation:",user1.email)
+user1.email="studentgmail.com"
+print("Email after updation:",user1.email)

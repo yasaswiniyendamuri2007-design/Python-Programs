@@ -1,0 +1,17 @@
+class Employee:
+    def __init__(self,salary):
+        self.__salary=salary
+    @property
+    def salary(self):
+        return self.__salary
+    @salary.setter
+    def salary(self,salary):
+        if 0<salary:
+            self.__salary=salary
+            print("Salary updated successfully")
+        else:
+            print("Invalid salary")
+employee1=Employee(30000)
+print("Salary:",employee1.salary)
+employee1.salary=40000
+print("Salary after updation:",employee1.salary)

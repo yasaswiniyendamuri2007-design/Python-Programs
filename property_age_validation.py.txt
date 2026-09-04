@@ -1,0 +1,19 @@
+class Student:
+    def __init__(self,age):
+        self.__age=age
+    @property
+    def age(self):
+        return self.__age
+    @age.setter
+    def age(self,age):
+        if 5<=age<=100:
+            self.__age=age
+            print("Age updated successfully")
+        else:
+            print("Invalid age")
+student1=Student(19)
+print("Age:",student1.age)
+student1.age=20
+print("Age after updation:",student1.age)
+student1.age=120
+print("Age after updation:",student1.age)
