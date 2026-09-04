@@ -1,0 +1,8 @@
+def greet(name):
+    print("hello",name)
+def add(a,b):
+    return a+b
+import my_module
+my_module.greet("Yasaswini")
+result=my_module.add(10,20)
+print("Addition:",result)

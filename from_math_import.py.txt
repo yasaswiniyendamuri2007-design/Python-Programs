@@ -1,0 +1,4 @@
+from math import sqrt,pow
+number=16
+print("Square root:",sqrt(number))
+print("Power",pow(2,3))
