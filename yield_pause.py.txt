@@ -1,0 +1,11 @@
+def numbers():
+    print("Starting")
+    yield 1
+    print("After first yield")
+    yield 2
+    print("After second yield")
+    yield 3
+generator=numbers()
+print(next(generator))
+print(next(generator))
+print(next(generator))
