@@ -1,0 +1,3 @@
+check=lambda number:"Even" if number%2==0 else "Odd"
+print(check(5))
+print(check(8))

@@ -1,0 +1,2 @@
+cube=lambda number:number*number*number
+print(cube(4))

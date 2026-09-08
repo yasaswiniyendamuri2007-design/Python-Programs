@@ -1,0 +1,4 @@
+numbers=[2,4,6,8,10]
+result=filter(lambda number:number>5,numbers)
+for number in result:
+    print(number)
