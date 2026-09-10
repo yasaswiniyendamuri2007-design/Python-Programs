@@ -1,0 +1,10 @@
+def logging_decorator(original_function):
+    def wrapper():
+        print("Function called:",original_function.__name__)
+        original_function()
+        print("Function execution completed")
+    return wrapper
+@logging_decorator
+def greet():
+    print("Hello,Yasaswini")
+greet()

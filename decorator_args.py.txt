@@ -1,0 +1,10 @@
+def decorator_function(original_function):
+    def wrapper(*args):
+        print("Before the function")
+        original_function(*args)
+        print("After the function")
+    return wrapper
+@decorator_function
+def add(*numbers):
+    print("Sum:",sum(numbers))
+add(5,2,3)

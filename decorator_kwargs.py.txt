@@ -1,0 +1,11 @@
+def decorator_function(original_function):
+    def wrapper(**kwargs):
+        print("Before the function")
+        original_function(**kwargs)
+        print("After the function")
+    return wrapper
+@decorator_function
+def greet(name,age):
+    print("Name:",name)
+    print("Age:",age)
+greet("Yasaswini",19)

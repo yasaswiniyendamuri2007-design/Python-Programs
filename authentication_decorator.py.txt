@@ -1,0 +1,13 @@
+def authentication_decorator(original_function):
+    def wrapper(username,password):
+        if username=="Yasaswini" and password=="1234":
+            print("Login successful")
+            original_function(username)
+        else:
+            print("Invalid username or password")
+    return wrapper
+@authentication_decorator
+def dashboard(username):
+    print("Welcome to the dashboard:",username)
+dashboard("Yasaswini","1234")
+

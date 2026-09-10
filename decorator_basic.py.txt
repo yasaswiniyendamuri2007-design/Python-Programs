@@ -1,0 +1,10 @@
+def decorator_function(original_function):
+    def wrapper():
+        print("Before the function")
+        original_function()
+        print("After the function")
+    return wrapper
+@decorator_function
+def greet():
+    print("Hello,Yasaswini")
+greet()

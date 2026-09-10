@@ -1,0 +1,11 @@
+def decorator_function(original_function):
+    def wrapper(a,b):
+        print("Before the function")
+        original_function(a,b)
+        print("After the function")
+    return wrapper
+@decorator_function
+def addition(a,b):
+    print(a+b)
+addition(5,2)
+        

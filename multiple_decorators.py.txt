@@ -1,0 +1,15 @@
+def first_decorator(original_function):
+    def wrapper():
+        print("First decorator")
+        original_function()
+    return wrapper
+def second_decorator(original_function):
+    def wrapper():
+        print("Second decorator")
+        original_function()
+    return wrapper
+@first_decorator
+@second_decorator
+def greet():
+    print("Hello,Yasaswini")
+greet()
