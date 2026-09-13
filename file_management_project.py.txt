@@ -1,0 +1,14 @@
+import os
+file_name="sample.txt"
+if os.path.exists(file_name):
+    print("File exists")
+    size=os.path.getsize(file_name)
+    print("File size:",size,"bytes")
+    new_file_name="new_sample.txt"
+    os.rename(file_name,new_file_name)
+    print("File renamed successfully")
+    if os.path.exists(new_file_name):
+        os.remove(new_file_name)
+        print("File deleted successfully")
+else:
+    print("File does not exist")

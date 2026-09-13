@@ -1,0 +1,8 @@
+import os
+old_name="hello.txt"
+new_name="welcome.txt"
+if os.path.exists(old_name):
+    os.rename(old_name,new_name)
+    print("File renamed successfully")
+else:
+    print("File does not exist")

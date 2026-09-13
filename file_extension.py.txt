@@ -1,0 +1,5 @@
+import os
+file_name="notes.txt"
+name,extension=os.path.splitext(file_name)
+print("File name:",name)
+print("Extension:",extension)

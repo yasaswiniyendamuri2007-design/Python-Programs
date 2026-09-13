@@ -1,0 +1,8 @@
+import os
+folder_name="MyFolder"
+if os.path.exists(folder_name):
+    items=os.listdir(folder_name)
+    for item in items:
+        print(item)
+else:
+    print("Folder does not exist")

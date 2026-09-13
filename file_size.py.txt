@@ -1,0 +1,8 @@
+import os
+file_name="hello.txt"
+if os.path.exists(file_name):
+    print("File exists")
+    size=os.path.getsize(file_name)
+    print("size of file",size,"bytes")
+else:
+    print("File does not exists")

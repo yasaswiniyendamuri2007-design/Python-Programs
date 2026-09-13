@@ -1,0 +1,9 @@
+import os
+path="MyFolder"
+if os.path.isfile(path):
+    print("It is a file")
+elif os.path.isdir(path):
+    print("It is a folder")
+else:
+    print("Path does not exist")
+    
