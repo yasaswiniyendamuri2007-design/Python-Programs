@@ -1,0 +1,10 @@
+import json
+student={"name":"Yasaswini","age":19,"course":"CSE","college":"Avanthi"}
+with open("student_record.json","w")as file:
+    json.dump(student,file)
+with open("student_record.json","r")as file:
+    data=json.load(file)
+print("Name:",data["name"])
+print("age:",data["age"])
+print("Course:",data["course"])
+print("college",data["college"])

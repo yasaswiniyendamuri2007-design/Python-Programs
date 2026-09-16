@@ -1,0 +1,7 @@
+import json
+data='''[{"name":"Yasaswini","course":"CSE"},{"name":"Rahul","course":"ECE"},{"name":"Priya","course":"IT"}]'''
+students=json.loads(data)
+for student in students:
+    print("Name:",student["name"])
+    print("course:",student["course"])
+    print()

@@ -1,0 +1,4 @@
+import json
+data='{"name":"Yasaswini","course":"CSE"}'
+student=json.loads(data)
+print(student)

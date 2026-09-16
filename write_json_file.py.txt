@@ -1,0 +1,5 @@
+import json
+student={"name:":"Yasaswini","age":19,"course":"CSE"}
+with open ("student.json","w") as file:
+    json.dump(student,file)
+print("JSON data written to file successfully")
