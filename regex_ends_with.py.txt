@@ -1,0 +1,7 @@
+import re
+text="Python is easy learn"
+result=re.search(r"learn$",text)
+if result:
+    print("Text ended with learn")
+else:
+    print("Text not ended with learn")

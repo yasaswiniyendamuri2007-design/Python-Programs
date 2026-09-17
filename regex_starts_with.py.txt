@@ -1,0 +1,7 @@
+import re
+text="Python is easy to learn"
+result=re.match("Python",text)
+if result:
+    print("Text starts with Python")
+else:
+    print("Text does not start with Python")

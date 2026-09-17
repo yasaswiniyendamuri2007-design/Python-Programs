@@ -1,0 +1,6 @@
+import re
+text="Contact me at yasaswini@gmail.com or call to 7989230911"
+emails=re.findall(r"\w+@\w+\.\w+",text)
+phone_number=re.findall(r"\d{10}",text)
+print("Email address",emails)
+print("Phone number:",phone_number)

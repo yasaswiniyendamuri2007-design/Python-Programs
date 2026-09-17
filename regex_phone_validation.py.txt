@@ -1,0 +1,7 @@
+import re
+phone="7989230911"
+result=re.fullmatch(r"\d{10}",phone)
+if result:
+    print("Valid phone number")
+else:
+    print("Invalid")

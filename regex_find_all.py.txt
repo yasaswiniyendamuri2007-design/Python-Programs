@@ -1,0 +1,5 @@
+import re
+text="I like Python because Python is useful and easy and Python is used in AI"
+words=re.findall("Python",text)
+print("Number of matches:",len(words))
+print("Matches:",words)

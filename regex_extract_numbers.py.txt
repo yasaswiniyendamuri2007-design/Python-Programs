@@ -1,0 +1,4 @@
+import re
+text="I have 2 books and 15 pens"
+numbers=re.findall(r"\d+",text)
+print("Numbers:",numbers)
