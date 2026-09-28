@@ -1,0 +1,16 @@
+import requests
+from bs4 import BeautifulSoup
+url="https://example.com"
+response=requests.get(url)
+soup=BeautifulSoup(response.text,"html.parser")
+headings=soup.find_all("h1")
+links=soup.find_all("a")
+with open("scraped_data.txt","w")as file:
+    file.write("HEADINGS:\n")
+    for heading in headings:
+        file.write(heading.text+"\n")
+    file.write("\nLINKS\n")
+    for link in links:
+        file.write(link.get("href")+"\n")
+print("Scraping completed successfully")
+print("Data saved to scraped_data.txt ")
